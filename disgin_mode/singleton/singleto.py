@@ -3,7 +3,7 @@ Singleton
 '''
 
 
-class Singleton(object):
+class Singleton:
     ''''' A python style singleton '''
 
     def __new__(cls, *args, **kw):

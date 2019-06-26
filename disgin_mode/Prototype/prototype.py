@@ -8,7 +8,7 @@ Prototype
 import copy
 
 
-class Prototype:
+class Proto:
     def __init__(self):
         self._objects = {}
 
