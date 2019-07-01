@@ -112,3 +112,29 @@ print(x > y)
 print(set('sayaa') - set('aa'))
 print(set('hei') == set('hie'))
 
+# 十进制数（固定精度浮点数）和分数（有一个分子和一个分母的有理数）
+import decimal  # 十进制固定精度
+
+d = decimal.Decimal('3.141')
+print(d + 1)
+
+from fractions import Fraction  # 分数
+f = Fraction(1,2)
+print(f + 1)
+
+# bool转换
+print(bool('spam'))
+
+# 三种方法检查所处理的对象类型
+L = [1,2,3]
+if type(L) == type([]):
+    print('yes 1')
+elif type(L) == list:
+    print('yes 2')
+elif isinstance(L, list):
+    print('yes 3')
+
+# 我们编写对象的接口而不是类型，这意味着，我们关注一个对象能做什么，而非它是什么。
+
+
+
