@@ -40,6 +40,9 @@ print('replace a to b:', a.replace('a', 'b'))
 # split
 print('a.split(): ', a.split('h'))
 
+# 字符串转列表
+a = 'abcd12'
+print(a.split())  # ['abcd12']
 # upper
 print('a.upper():', a.upper())
 
