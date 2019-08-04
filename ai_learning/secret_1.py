@@ -54,7 +54,7 @@ def is_eng(uchar):
 
 
 if __name__ == '__main__':
-    a = encode_('ab')
+    a = encode_(u'你好，a A bZ！z')
     print(a)
     a = decode_(a)
     print(a)
