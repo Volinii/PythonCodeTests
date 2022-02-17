@@ -1,0 +1,41 @@
+TestSuite:
+  -Test2:
+    base: &id001
+    - set0
+    - set1
+    - set3
+    case:
+      name: scan everything
+      params:
+        others:
+        - a
+        - b
+        p1: header
+        p2: body
+    name: TestBaseDescription
+  -Test3:
+    base: *id001
+    case:
+      name: scan everything
+      params:
+        others:
+        - a
+        - b
+        p1: header
+        p2: body
+    name: TestBaseDescription
+  -Tests:
+    base: *id001
+    case:
+      name: scan everything
+      params:
+        others:
+        - a
+        - b
+        p1: header
+        p2: body
+    name: TestBaseDescription
+  name: only a sample
+sample_settings:
+  base: *id001
+  name: TestBaseDescription

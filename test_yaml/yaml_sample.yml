@@ -1,0 +1,40 @@
+sample_settings: &sample_settings
+  base:
+    - set0
+    - set1
+    - set3
+  name: TestBaseDescription
+
+
+TestSuite:
+  name: only a sample
+  -Tests:
+    <<: *sample_settings
+    case:
+      name: scan everything
+      params:
+        p1: header
+        p2: body
+        others:
+          - a
+          - b
+  -Test2:
+    <<: *sample_settings
+    case:
+      name: scan everything
+      params:
+        p1: header
+        p2: body
+        others:
+          - a
+          - b
+  -Test3:
+    <<: *sample_settings
+    case:
+      name: scan everything
+      params:
+        p1: header
+        p2: body
+        others:
+          - a
+          - b
