@@ -1,3 +1,4 @@
+import numpy
 from mxnet import np, numpy_extension
 # numpy_extension.set_np()
 
@@ -24,3 +25,5 @@ print(np.concatenate([x, np.zeros((2,3))], axis=0)) # 连接 axis=0  y插入行�
 print(np.concatenate([x, np.zeros((2,3))], axis=1)) # 连接 axis=1  y插入列到x
 
 # https://zh-v2.d2l.ai/chapter_preliminaries/ndarray.html
+
+print(numpy.array([1.,2.,3.,4.]))
